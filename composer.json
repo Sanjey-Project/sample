@@ -1,0 +1,19 @@
+{
+    "name": "academic-performance-analysis",
+    "description": "Academic Performance Analysis System with Elasticsearch",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "elasticsearch/elasticsearch": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "includes/"
+        }
+    }
+}
+
+

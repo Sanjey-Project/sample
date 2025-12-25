@@ -1,0 +1,1483 @@
+{
+  "1": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "studentEmail": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "dob": {
+          "type": "date",
+          "format": "dd-MM-yy||yyyy-MM-dd"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "section": {
+          "type": "keyword"
+        },
+        "passedOutYear": {
+          "type": "integer"
+        },
+        "regDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "2": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "facultyName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "facultyCode": {
+          "type": "keyword"
+        },
+        "qualification": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "contact": {
+          "type": "long"
+        },
+        "creationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "3": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "classNameNumeric": {
+          "type": "integer"
+        },
+        "section": {
+          "type": "keyword"
+        },
+        "creationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "4": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "credit": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "creationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "5": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "marks": {
+          "type": "keyword"
+        },
+        "grades": {
+          "type": "integer"
+        },
+        "postingDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "6": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "totalSubjects": {
+          "type": "integer"
+        },
+        "totalMarks": {
+          "type": "float"
+        },
+        "averageGrade": {
+          "type": "float"
+        },
+        "cgpa": {
+          "type": "float"
+        },
+        "passedSubjects": {
+          "type": "integer"
+        },
+        "failedSubjects": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "7": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "facultyId": {
+          "type": "integer"
+        },
+        "facultyName": {
+          "type": "keyword"
+        },
+        "facultyCode": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "creationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "8": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "credit": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "creationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "9": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "departmentName": {
+          "type": "keyword"
+        },
+        "username": {
+          "type": "keyword"
+        },
+        "password": {
+          "type": "keyword"
+        }
+      }
+    }
+  },
+  "10": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "fullName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "userName": {
+          "type": "keyword"
+        },
+        "email": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "phno": {
+          "type": "long"
+        },
+        "password": {
+          "type": "keyword"
+        },
+        "updationDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "11": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "subjects": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "subjectId": {
+              "type": "integer"
+            },
+            "subjectName": {
+              "type": "keyword"
+            },
+            "subjectCode": {
+              "type": "keyword"
+            },
+            "marks": {
+              "type": "keyword"
+            },
+            "grades": {
+              "type": "integer"
+            },
+            "credit": {
+              "type": "integer"
+            }
+          }
+        },
+        "semesterGPA": {
+          "type": "float"
+        },
+        "totalCredits": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "12": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "totalStudents": {
+          "type": "integer"
+        },
+        "averageGrade": {
+          "type": "float"
+        },
+        "passRate": {
+          "type": "float"
+        },
+        "failRate": {
+          "type": "float"
+        },
+        "gradeDistribution": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "O": {
+              "type": "integer"
+            },
+            "A+": {
+              "type": "integer"
+            },
+            "A": {
+              "type": "integer"
+            },
+            "B+": {
+              "type": "integer"
+            },
+            "B": {
+              "type": "integer"
+            },
+            "U": {
+              "type": "integer"
+            }
+          }
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "13": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "section": {
+          "type": "keyword"
+        },
+        "totalStudents": {
+          "type": "integer"
+        },
+        "averageCGPA": {
+          "type": "float"
+        },
+        "classAverageGrade": {
+          "type": "float"
+        },
+        "topPerformer": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "studentId": {
+              "type": "integer"
+            },
+            "studentName": {
+              "type": "keyword"
+            },
+            "cgpa": {
+              "type": "float"
+            }
+          }
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "14": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "facultyId": {
+          "type": "integer"
+        },
+        "facultyName": {
+          "type": "keyword"
+        },
+        "facultyCode": {
+          "type": "keyword"
+        },
+        "totalClasses": {
+          "type": "integer"
+        },
+        "totalSubjects": {
+          "type": "integer"
+        },
+        "classes": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "classId": {
+              "type": "integer"
+            },
+            "className": {
+              "type": "keyword"
+            },
+            "subjectId": {
+              "type": "integer"
+            },
+            "subjectName": {
+              "type": "keyword"
+            }
+          }
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "15": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            },
+            "suggest": {
+              "type": "completion"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "studentEmail": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "passedOutYear": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "16": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "academicYear": {
+          "type": "integer"
+        },
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "yearCGPA": {
+          "type": "float"
+        },
+        "totalCredits": {
+          "type": "integer"
+        },
+        "semesters": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "semester": {
+              "type": "integer"
+            },
+            "gpa": {
+              "type": "float"
+            }
+          }
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "17": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "gradeCounts": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "O": {
+              "type": "integer"
+            },
+            "A+": {
+              "type": "integer"
+            },
+            "A": {
+              "type": "integer"
+            },
+            "B+": {
+              "type": "integer"
+            },
+            "B": {
+              "type": "integer"
+            },
+            "U": {
+              "type": "integer"
+            }
+          }
+        },
+        "totalStudents": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "18": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "date": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "status": {
+          "type": "keyword"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "19": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "facultyId": {
+          "type": "integer"
+        },
+        "facultyName": {
+          "type": "keyword"
+        },
+        "facultyCode": {
+          "type": "keyword"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "averageGrade": {
+          "type": "float"
+        },
+        "passRate": {
+          "type": "float"
+        },
+        "totalStudents": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "20": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "subjects": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "subjectId": {
+              "type": "integer"
+            },
+            "subjectName": {
+              "type": "keyword"
+            },
+            "subjectCode": {
+              "type": "keyword"
+            },
+            "credit": {
+              "type": "integer"
+            },
+            "facultyId": {
+              "type": "integer"
+            },
+            "facultyName": {
+              "type": "keyword"
+            }
+          }
+        },
+        "totalCredits": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "21": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "passedOutYear": {
+          "type": "integer"
+        },
+        "overallCGPA": {
+          "type": "float"
+        },
+        "semesterResults": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "semester": {
+              "type": "integer"
+            },
+            "gpa": {
+              "type": "float"
+            },
+            "subjects": {
+              "type": "nested",
+              "dynamic": "false",
+              "properties": {
+                "subjectName": {
+                  "type": "keyword"
+                },
+                "subjectCode": {
+                  "type": "keyword"
+                },
+                "credit": {
+                  "type": "integer"
+                },
+                "grade": {
+                  "type": "keyword"
+                },
+                "gradePoints": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "totalCredits": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "22": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "failedSubjects": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "subjectId": {
+              "type": "integer"
+            },
+            "subjectName": {
+              "type": "keyword"
+            },
+            "subjectCode": {
+              "type": "keyword"
+            },
+            "grade": {
+              "type": "keyword"
+            },
+            "semester": {
+              "type": "integer"
+            }
+          }
+        },
+        "totalFailedSubjects": {
+          "type": "integer"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "23": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "className": {
+          "type": "keyword"
+        },
+        "cgpa": {
+          "type": "float"
+        },
+        "rank": {
+          "type": "integer"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "24": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "subjectId": {
+          "type": "integer"
+        },
+        "subjectName": {
+          "type": "keyword"
+        },
+        "subjectCode": {
+          "type": "keyword"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "credit": {
+          "type": "integer"
+        },
+        "statistics": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "totalStudents": {
+              "type": "integer"
+            },
+            "averageGrade": {
+              "type": "float"
+            },
+            "medianGrade": {
+              "type": "float"
+            },
+            "passRate": {
+              "type": "float"
+            },
+            "failRate": {
+              "type": "float"
+            },
+            "standardDeviation": {
+              "type": "float"
+            }
+          }
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "25": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "eventId": {
+          "type": "keyword"
+        },
+        "eventType": {
+          "type": "keyword"
+        },
+        "studentId": {
+          "type": "integer"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "subjectId": {
+          "type": "integer"
+        },
+        "eventDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "description": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "metadata": {
+          "type": "object",
+          "enabled": true
+        }
+      }
+    }
+  },
+  "26": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "studentId": {
+          "type": "integer"
+        },
+        "studentName": {
+          "type": "keyword"
+        },
+        "rollId": {
+          "type": "keyword"
+        },
+        "classId": {
+          "type": "integer"
+        },
+        "progressHistory": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "semester": {
+              "type": "integer"
+            },
+            "gpa": {
+              "type": "float"
+            },
+            "cgpa": {
+              "type": "float"
+            },
+            "rank": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "date",
+              "format": "yyyy-MM-dd HH:mm:ss"
+            }
+          }
+        },
+        "trend": {
+          "type": "keyword"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "27": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "comparisonId": {
+          "type": "keyword"
+        },
+        "classId1": {
+          "type": "integer"
+        },
+        "className1": {
+          "type": "keyword"
+        },
+        "classId2": {
+          "type": "integer"
+        },
+        "className2": {
+          "type": "keyword"
+        },
+        "metrics": {
+          "type": "nested",
+          "dynamic": "false",
+          "properties": {
+            "averageCGPA1": {
+              "type": "float"
+            },
+            "averageCGPA2": {
+              "type": "float"
+            },
+            "passRate1": {
+              "type": "float"
+            },
+            "passRate2": {
+              "type": "float"
+            },
+            "difference": {
+              "type": "float"
+            }
+          }
+        },
+        "academicYear": {
+          "type": "integer"
+        },
+        "semester": {
+          "type": "integer"
+        },
+        "lastUpdated": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "28": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "notificationId": {
+          "type": "keyword"
+        },
+        "recipientType": {
+          "type": "keyword"
+        },
+        "recipientId": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "message": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "type": {
+          "type": "keyword"
+        },
+        "priority": {
+          "type": "keyword"
+        },
+        "read": {
+          "type": "boolean"
+        },
+        "createdDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "expiryDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "29": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "logId": {
+          "type": "keyword"
+        },
+        "userId": {
+          "type": "integer"
+        },
+        "userType": {
+          "type": "keyword"
+        },
+        "action": {
+          "type": "keyword"
+        },
+        "entityType": {
+          "type": "keyword"
+        },
+        "entityId": {
+          "type": "integer"
+        },
+        "oldValue": {
+          "type": "object",
+          "enabled": true
+        },
+        "newValue": {
+          "type": "object",
+          "enabled": true
+        },
+        "ipAddress": {
+          "type": "ip"
+        },
+        "timestamp": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        }
+      }
+    }
+  },
+  "30": {
+    "mappings": {
+      "dynamic": "false",
+      "properties": {
+        "reportId": {
+          "type": "keyword"
+        },
+        "reportType": {
+          "type": "keyword"
+        },
+        "reportName": {
+          "type": "text",
+          "fields": {
+            "sortable": {
+              "type": "keyword",
+              "ignore_above": 30000,
+              "normalizer": "case_insensitive"
+            },
+            "untouched": {
+              "type": "keyword"
+            }
+          },
+          "analyzer": "standard"
+        },
+        "parameters": {
+          "type": "object",
+          "enabled": true
+        },
+        "generatedBy": {
+          "type": "integer"
+        },
+        "generatedDate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "filePath": {
+          "type": "keyword"
+        },
+        "status": {
+          "type": "keyword"
+        },
+        "metadata": {
+          "type": "object",
+          "enabled": true
+        }
+      }
+    }
+  }
+}
+
+
